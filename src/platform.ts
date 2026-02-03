@@ -333,9 +333,11 @@ export class SmartHQPlatform implements DynamicPlatformPlugin {
               await this.createSmartHQHood(userId, device, details, features)
               break
             case 'Clothes Washer':
+            case 'GE Washer':
               await this.createSmartHQClothesWasher(userId, device, details, features)
               break
             case 'Clothes Dryer':
+            case 'GE Dryer':
               await this.createSmartHQClothesDryer(userId, device, details, features)
               break
             case 'Whole Home Water Filter':
